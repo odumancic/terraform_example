@@ -34,6 +34,6 @@ Roles are creates using "aws_iam_role" module and I have assigned default policy
 Users are assigned to groups using "aws_iam_user_group_membership" module.
 In order for user to assume role it needs to have correct policy so "aws_iam_user_policy" module will attach policy to users to allow them to assume roles (user will be able to assume only role that are specified in iam_users.groups).
 
-For example user1 that have group1 assignes will be able to assume role group1 but won't be able to assume other roles if they exist for other users.
+For example user1 that have group1 assigned will be able to assume role group1 but won't be able to assume other roles if they exist for other users.
 
 This module should work even if user don't have any groups assigned to them
