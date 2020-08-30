@@ -7,13 +7,11 @@ There are two variables for creating users and groups, iam_users and iam_gorups.
 This code will create user, create groups, create role based on group name and attach policy to users.
 User can assume roles that are defined in groups.
 
-
-<pre><code>
-EXAMPLE
+<pre><code> EXAMPLE
 variable "iam_users" {
   default =  {
     alex        = { groups = ["developers"] },
-    brian        = { groups = ["developers","ops"] },
+    brian       = { groups = ["developers","ops"] },
     }
 }
 
