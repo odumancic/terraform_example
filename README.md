@@ -23,7 +23,7 @@ variable "iam_groups" {
 }
 </code></pre>
 
-This code is tested on AWS.
+This code was tested on AWS.
 
 Explanation:
 Users will be created with the "aws_iam_user" module from the "iam_users" dictionary. This will create normal user in the AWS, since this is dictionary we can add additional keys if needed (like tags, etc.).
